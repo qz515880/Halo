@@ -1,0 +1,15 @@
+{
+  "name": "warrior",
+  "version": "1.0.0",
+  "description": "Node js pratice project",
+  "main": "halo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "qiuzhong",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.0",
+    "express3-handlebars": "^0.5.2"
+  }
+}
