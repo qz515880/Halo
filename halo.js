@@ -1,6 +1,12 @@
 var express = require('express');
 var fortune = require('./lib/fortune.js');
 var app = express();
+
+app.use(function(req,res,next){
+	res.locals.showTests = app.get('env') != 'production' && req.query.test === '1';
+	next();
+});
+
 app.use(express.static(__dirname+'/public'));
 
 var handlebars = require('express3-handlebars').create({defaultLayout:'main'});
